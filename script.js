@@ -11,8 +11,8 @@ function isnumero(n){
     }
 
 }
-function inlista(n, 1){
-    if(1.indexOf(Number(n)) != -1){
+function inlista(n, l){
+    if(l.indexOf(Number(n)) != -1){
         return true
     } else {
         return false
@@ -21,7 +21,8 @@ function inlista(n, 1){
 }
 function adicionar(){
     if(isnumero(num.value) && !inlista(num.value)){
+        
     } else {
-    window.alert('Valor invalido ou ja encontrado na lista!')
+        window.alert('Valor invalido ou ja encontrado na lista!')
     }
 }
